@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp2.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Window1" Height="237.295" Width="250">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.024,0.972" StartPoint="0.983,0.025">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="cmdOK" Content="OK" HorizontalAlignment="Left" Height="43" Margin="53,143,0,0" VerticalAlignment="Top" Width="155" Click="cmdOK_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="3" Margin="146,170,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="30"/>
+        <TextBox x:Name="txt1" HorizontalAlignment="Left" Height="18" Margin="14,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28" MaxLength="2" TextChanged="txt1Changed" RenderTransformOrigin="-0.024,-0.71"/>
+        <TextBox x:Name="txt2" HorizontalAlignment="Left" Height="18" Margin="53,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28" MaxLength="2" TextChanged="txt2_TextChanged" RenderTransformOrigin="-0.024,-0.71"/>
+        <TextBox x:Name="txt3" HorizontalAlignment="Left" Height="18" Margin="93,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28" MaxLength="2" TextChanged="txt3_TextChanged" RenderTransformOrigin="0.016,0.635"/>
+        <TextBox x:Name="txt4" HorizontalAlignment="Left" Height="18" Margin="132,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28" MaxLength="2" TextChanged="txt4_TextChanged" RenderTransformOrigin="1.072,0.71"/>
+        <TextBox x:Name="txt5" HorizontalAlignment="Left" Height="18" Margin="171,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="28" MaxLength="2" TextChanged="txt5_TextChanged"/>
+
+    </Grid>
+</Window>
